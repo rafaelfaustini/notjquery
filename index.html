@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body>
+    <a href="#" id="teste">Teste</a><br><br>
+    <input type="text" id="inputTeste" value="Value"/> <br><br>
+    <button id="btnShowHide">Mostrar/Esconder input</button>
+    <script src="notjquery.js"></script>
+    
+    <script>
+        console.log($('#teste').html())
+        console.log($('#teste').text())
+        console.log($('#teste').text("Teste2"))
+        console.log($('#inputTeste').val("Value2"))
+
+        function callbackTeste(){
+            console.log('Botão Clicado')
+        }
+
+        $('#btnShowHide').on('click', ()=> {
+            $('#inputTeste').toggle(callbackTeste)
+        })
+
+        async function teste(){
+            const response = await notjquery.get("https://jsonplaceholder.typicode.com/todos/");
+            console.log(response);
+        }
+        teste();
+    </script>
+</body>
+</html>
