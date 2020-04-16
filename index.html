@@ -1,11 +1,29 @@
 <html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="lib/notjquery.min.css">
 </head>
-<body>
+<body style="overflow: scroll;">
     <a href="#" id="teste">Teste</a><br><br>
     <input type="text" id="inputTeste" value="Value"/> <br><br>
-    <button id="btnShowHide">Mostrar/Esconder input</button>
+    <button id="btnShowHide">Mostrar/Esconder input</button><br><br><br>
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>    
+    <textarea rows="10" animation="left" ></textarea><br><br>    
+    <textarea rows="10" animation="right" ></textarea><br><br>   
+    <textarea rows="10" animation="left" ></textarea><br><br>   
+    <textarea rows="10" animation="right" ></textarea><br><br>   
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>
+    <textarea rows="10" animation="left" ></textarea><br><br>
+    <textarea rows="10" animation="right" ></textarea><br><br>
+
+
     <script src="lib/notjquery.min.js"></script>
     
     <script>
@@ -14,9 +32,6 @@
         console.log($('#teste').text("Teste2"))
         console.log($('#inputTeste').val("Value2"))
 
-        function callbackTeste(){
-            console.log('Botão Clicado')
-        }
 
         $('#btnShowHide').on('click', ()=> {
             $('#inputTeste').fade()

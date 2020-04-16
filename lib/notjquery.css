@@ -1,0 +1,18 @@
+[animation] {
+    opacity: 0;
+    transition: .4s;
+}
+
+[animation="left"] {
+    transform: translate3d(-10vw, 0px, 0px)
+}
+
+[animation="right"]{
+    transform: translate3d(10vw, 0px, 0px)
+}
+
+[animation].animate {
+    opacity: 1;
+    transform: translate3d(0vw, 0px, 0px)
+}
+
